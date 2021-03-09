@@ -1,0 +1,32 @@
+body
+{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin-top: 10vh;
+  height: 90vh;
+}
+
+.projects img
+{
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+.child
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.imageDiv
+{
+  align-items: center;
+}
