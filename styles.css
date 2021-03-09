@@ -2,31 +2,211 @@ body
 {
   margin:0;
   padding:0;
-  height:100%;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+p
+{
+  font-size: .75vw;
+  margin-bottom: 1%;
+}
+
+h3
+{
+ margin-top: 2%;
+ margin-bottom: 2%;
+ font-size: 1vw;
+}
+h1
+{
+  margin-top: 0;
+  font-weight: normal;
 }
 
 .grid-container
 {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  margin-top: 10vh;
-  height: 90vh;
+  height: 100vh;
 }
 
-.projects img
+.projects
+{
+  background-color: #dfe0e2;
+}
+
+.imageDiv img
 {
   display: block;
-  margin: auto;
-  width: 75%;
+  width: 100%;
+  filter: drop-shadow(0 0 0.75rem #787878);
 }
 
 .child
 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  padding-bottom: 2.5vh;
 
 }
 .imageDiv
 {
   align-items: center;
+  margin: 0 15% 0 20%;
+}
+
+.infoDiv
+{
+  margin-right: 10%;
+}
+
+.Header
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  width: 100vw;
+  top: 0;
+}
+
+.top
+{
+  margin-top: 20vh;
+}
+
+.aboutMe
+{
+  background-color: #ffffff;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1.25vw;
+
+}
+
+ul
+{
+  columns: 2;
+-webkit-columns: 2;
+-moz-columns: 2;
+font-size: 1vw;
+line-height: 2;
+list-style-type: circle;
+padding: 5%;
+}
+
+.bio
+{
+    line-height: 2;
+    font-size: 1vw;
+}
+
+.resume
+{
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  width: 20vh;
+  height: 7vh;
+  border: 10px solid black;
+  border-bottom: 20px solid black;
+  font-size: .75vw;
+  font-weight: bold;
+}
+
+.resume:hover
+{
+  background-color: #000000;
+  color: #ffffff;
+  transition-duration: .5s;
+
+}
+
+.logo img
+{
+  margin-left: 5vw;
+  margin-top: 1vw;
+  width: 20vh;
+}
+.contact img
+{
+  height: 4vh;
+  margin-left: 1vw;
+}
+
+.right
+{
+  padding-left: 75%;
+  padding-top: 5%;
+}
+
+.infoDiv a
+{
+  font-size: .85vw;
+  margin-right: 2%;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+}
+.infoDiv a:before
+{
+content: "";
+position: absolute;
+width: 0;
+height: 3px;
+bottom: 0;
+left: 0;
+background-color: #000000;
+visibility: hidden;
+transition: all 0.2s ease-in-out;
+}
+.infoDiv a:hover:before
+{
+  visibility: visible;
+  width: 100%;
+}
+
+.tech
+{
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.contact img:hover
+{
+  opacity: .5;
+  transition-duration:.5s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid-container {
+    display: block;
+    width: 100vw;
+  }
+
+  .aboutMe
+  {
+    margin-top: 0;
+    display: absolute;
+    top: 1vw;
+  }
+
+  .switchTop
+  {
+    display: absolute;
+    top: 0;
+    margin-top: 0;
+
+  }
+  .switchBot
+  {
+    display: absolute;
+    bottom: 0;
+  }
+  .right
+  {
+    padding-left: 40%;
+    padding-top: 5%;
+  }
+
 }
