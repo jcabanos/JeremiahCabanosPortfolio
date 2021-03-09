@@ -4,21 +4,38 @@
     <meta charset="utf-8">
     <title>Jeremiah Cabanos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="Header">
+    <div class="logo">
+    <img src=PNG/Logo1.png />
+    </div>
+    <div class="contact" >
+      <div class="right">
+        <a href="#"><img src="PNG/Github.png"/></a>
+        <a href="mailto: miahcainoy@gmail.com"><img src="PNG/Mail.png"/></a>
+      </div>
+    </div>
+    </div>
     <div class="grid-container">
 
-    <div class="projects">
-      <div class="firstProj child">
+    <div class="projects switchBot">
+      <div class="firstProj child top">
         <div class="imageDiv">
           <img src="Asteroid-Tracker.jpg" />
         </div>
         <div class="infoDiv">
         <h3>Asteroid Tracker</h3>
           <p>
-
+            A visual and interactive web application using NASA’s Asteroid API that shows the user all the asteroids close to Earth on the date selected and providing each asteroids information.
+            It shows asteroids orbiting the Earth with distance accurately scaled 1px : 75000mi.
           </p>
-          <a>Code</a> <a>Live</a>
+          <p class="tech">
+            •	Created with: HTML5, CSS3, JavaScript (jQuery, JSON), NASA & WebGL Earth API.
+          </p>
+          <a href="#">Code</a> <a href="#">Live</a>
       </div>
     </div>
     <div class="secProj child">
@@ -27,10 +44,14 @@
       </div>
       <div class="infoDiv">
       <h3>Massage Appointment Website</h3>
-        <p>
-
-        </p>
-        <a>Code</a> <a>Live</a>
+      <p>
+        Created a fully responsive web application from an mockup for a client to showcase their services and allow for users to book appointments.
+        Utilized bootstrap and media queries to make application fully responsive.
+      </p>
+      <p class="tech">
+        •	Created using HTML5, CSS3 (Bootstrap)
+      </p>
+        <a href="#">Code</a> <a href="#">Live</a>
     </div>
   </div>
   <div class="thirdProj child">
@@ -40,23 +61,38 @@
     <div class="infoDiv">
       <h3>Twitter Bot Detector</h3>
       <p>
-
+        Was part of a team of 3 to create a program that scraped a Twitter user’s data and analyzed it to calculate its chances of being a Twitter bot.
+        Analyzed user's tweets, bio, profile picture, and date of creation to calculate its chances of being a bot.
       </p>
-      <a>Code</a> <a>Live</a>
+      </p>
+      <p class="tech">
+        •	Created using Python 3, Tkinter, Twitter API
+      </p>
+      <a href="#">Code</a>
   </div>
 </div>
     </div>
-    <div class="aboutMe">
-      <h1>Jeremiah Cabanos</h1>
-      <p>
-
+    <div class="switchTop">
+    <div class="aboutMe top">
+      <h1><b>Jeremiah</b> Cabanos</h1>
+      <p class="bio">
+        Front-end developer passionate about solving problems and bringing ideas to life with progressive web applications and designs.
       </p>
       <ul>
-       <li>skills</li>
-       <li>skills</li>
-       <li>skills</li>
+       <li>JavaScript (ES6) </li>
+       <li>HTML5</li>
+       <li>CSS3 </li>
+       <li>jQuery</li>
+       <li>Bootstrap</li>
+       <li>CSS Grid </li>
+       <li>Flexbox</li>
+       <li>Python 3</li>
+       <li>Version Control</li>
+       <li>Adobe Creative Cloud</li>
       </ul>
+      <button type="button" class="resume">VIEW RESUME</button>
     </div>
   </div>
+</div>
   </body>
 </html>
