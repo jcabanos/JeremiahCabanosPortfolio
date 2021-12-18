@@ -44,6 +44,11 @@ h1
   filter: drop-shadow(0 0 0.75rem #787878);
 }
 
+.center img
+{
+  margin-top: 20%;
+}
+
 .child
 {
   display: grid;
